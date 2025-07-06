@@ -1,0 +1,319 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+}
+
+ /* COMEÇO DO HEADER */
+
+.header, .header2{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: #26a8db;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.header3{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: #26a8db;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.logo{
+    flex: 20%;
+    
+   
+}
+
+.logo h1{
+    text-align: center;
+    margin-left: 5%;
+    color: white;
+    
+    
+}
+
+.menu{
+    flex: 75%;
+   
+}
+
+
+.menu a{
+    padding: 10px;
+    margin-left: 8%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.menu a:hover{
+    color: #26a8db;
+    padding: 12px;
+}
+
+ /* FIM DO HEADER */
+
+
+ /* COMEÇO DO CONTEUDO INDEX */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black solid 2px;
+    margin: 5%;
+    flex: 1;
+}
+
+.container-sobre{
+    flex: 60%;
+
+    font-size: 23px;
+    padding: 10px;
+    margin: 5%;
+}
+
+.container-sobre h2{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 50px;
+    margin-left: 30px;
+
+}
+
+.container-sobre p{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px;
+}
+
+
+section img{
+    flex: 20%;
+    border-radius: 50%;
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 5%;
+    border: black solid;
+}
+
+ /* FIM DO CONTEUDO INDEX */
+
+
+ /* COMEÇO DO FOOTER */
+footer{
+    display: flex;
+    background-color: #26a8db;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+footer h3{
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px;
+    font-size: 30px;
+}
+
+ /* FIM DO FOOTER */
+
+
+  /* COMEÇO DO CONTEUDO DE FORMAÇÃO*/
+.container-formacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex: 1;
+}
+
+.container-educacao{
+    flex: 60%;
+    border: black solid;
+    font-size: 23px;
+    padding: 10px;
+    margin: 5%;
+}
+
+.container-educacao h2{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px;
+    text-align: center;
+}
+
+.container-educacao p{
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px;
+}
+
+.titulo-ensino{
+    font-weight: bold;
+}
+
+  /* FIM DO CONTEUDO DE FORMAÇÃO*/
+
+
+  /* COMEÇO DE TODOS OS CONTAINERS*/
+.container-portifolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+
+.container-projetos{
+    border: black solid;
+    font-size: 23px;
+    padding: 10px;
+    margin: 5%;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-projetos a{
+    text-decoration: none;
+    color: black;
+}
+
+.conteudo-projetos, .link-projetos h2{
+    flex:20%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+
+}
+
+.container-contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    flex: 1;
+}
+  /* FIM DE TODOS OS CONTAINERS*/
+
+/* CONTEUDO DA PAGINA CONTATO */
+.input{
+    display: block;
+    width: 500px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.texto-label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+
+}
+
+.botao-enviar {
+        padding: 10px;
+        background-color: #26a8db;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+}
+
+
+/* MÉTODO PARA CRIAR SITE RESPONSIVO*/
+@media (max-width: 830px) {
+    .header, .header2, .header3 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .logo {
+        flex: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        flex: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu a {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .container, .container-formacao, .container-portifolio, .container-contato {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .container-sobre, .container-educacao, .container-projetos, .container-contato {
+        flex: 100%;
+        margin: 10px;
+    }
+
+    section img {
+        width: 150px;
+        margin: 10px auto;
+    }
+
+    .form-contato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .botao-enviar {
+        padding: 10px;
+        background-color: #26a8db;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    .footer {
+        position: static;
+        bottom: 0;
+        height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+}
